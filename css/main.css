@@ -1,85 +1,37 @@
-*{
-    font-family: 'Helvetica',Arial,sans-serif;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54.22px;
 }
 
-.logo-area {
-    position: absolute;
-    z-index: 1;
-    box-sizing: border-box;
-    display: table;
+#logo-area {
+    position: relative;
     left: 20px;
-    top: 2px;
+    top: 3px;
+}
+
+#logo-area img {
     width: 72px;
-    zoom: 1.409;
+    position: relative;
+    /* -webkit-transform: scale(1.2);
+    transform: scale(1.2); */
 }
 
-.logo {
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-    outline: none;
-    color: #ff8562;
-    text-decoration: none;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
+#main-navigation {
+    text-align: center;
 }
 
-.aboutus-area {
-    top: 28px;
-    left: 421px;
-    width: 70px;
-    zoom: 1.409;
-    color: #000;
-    z-index: 3;
-    visibility: visible;
-    position: absolute;
-    box-sizing: border-box;
-    display: table;
-    
-}
-
-.aboutus {
-    height: 13px !important;
-    transform-origin: center center;
-    line-height: 13px;
-    color: #000;
-    font-size: 9px;
-    font-weight: 400;
-    background-position: center center;
+#main-navigation li {
     display: inline-block;
-    overflow: hidden;
-    width: 100%;
+    margin-right: 20px;
 }
 
-.offer-area {
-    top: 28px;
-    left: 537px;
-    width: 50px;
-    zoom: 1.409;
-    color: #000000;
-    z-index: 4;
-    visibility: visible;
-    position: absolute;
-    box-sizing: border-box;
-    display: table;
+#location-area {
+    display: flex;
 }
 
-.offer {
-    height: 13px !important;
-    transform-origin: center center;
-    line-height: 13px;
-    color: #000000;
-    font-size: 9px;
-    font-weight: 400;
-    text-transform: uppercase;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    vertical-align: middle;
+.intro-pg {
     width: 100%;
-    -webkit-text-size-adjust: 100%;
+
 }
