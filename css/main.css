@@ -1,3 +1,9 @@
+.intro-page {
+    height: 1507px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -32,6 +38,103 @@ header {
 }
 
 .intro-pg {
+    position: relative;
     width: 100%;
+    top: 108px;
+}
 
+.intro-pg .text-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* (선택사항) 텍스트 요소들을 수직으로 정렬하기 위해 추가 */
+}
+
+.intro-pg .text-area p {
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    line-height: 23px;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.intro-pg .text-area h1 {
+    position: relative;
+    left: -130px;
+    color: #000000;
+    font-size: 86px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -3.5px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.intro-pg .text-area h2 {
+    position: relative;
+    right: -70px;
+    color: #000000;
+    font-size: 86px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -3.5px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+
+
+.contactbtn-area {
+    position: absolute;
+    top: 257px;
+    left: 620px;
+}
+
+.contact-btn {
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #252424;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: #fffdf8;
+    background-image: none;
+    border-color: #252424;
+    color: #000000;
+}
+
+.img-area {
+    position: relative;
+    top: 447px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-area img {
+    width: 360px;
+    margin-left: 40px;
+}
+
+#about {
+    height: 972px !important;
+    width: 100vw !important;
+    max-width: 100%;
 }
