@@ -89,12 +89,10 @@ header {
     border-style: solid;
 }
 
-
-
 .contactbtn-area {
     position: absolute;
     top: 257px;
-    left: 620px;
+    left: 735px;
 }
 
 .contact-btn {
@@ -129,12 +127,59 @@ header {
 }
 
 .img-area img {
+    position: relative;
     width: 360px;
     margin-left: 40px;
 }
 
+.img-area .desc {
+    position: relative;
+    top: 35px;
+    width: 360px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    position: relative;
+    top: 40px;
+    width: 360px;
+    margin-left: 40px;
+    height: 1.409px;
+    background-color: #b0b0b0;
+    border-style: solid;
+}
+
 #about {
+    position: relative;
     height: 972px !important;
     width: 100vw !important;
     max-width: 100%;
+}
+
+#about h1 {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    font-size: 86px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    line-height: 86px;
+    font-weight: 400;
+    border-style: solid;
+}
+
+#about h2 {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    color: #868686;
+    font-size: 16px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-style: solid;
 }
