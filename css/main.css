@@ -140,7 +140,7 @@ header {
     justify-content: space-between;
 }
 
-hr {
+.img-line {
     position: relative;
     top: 40px;
     width: 360px;
@@ -151,13 +151,36 @@ hr {
 }
 
 #about {
-    position: relative;
     height: 972px !important;
     width: 100vw !important;
     max-width: 100%;
 }
 
-#about h1 {
+#working {
+    height: 1352px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
+#doing {
+    height: 1169px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
+#why {
+    height: 1310px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
+#contact {
+    height: 1113px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
+.title {
     position: absolute;
     top: 70px;
     left: 50%;
@@ -170,10 +193,9 @@ hr {
     border-style: solid;
 }
 
-#about h2 {
+.subheading {
     position: absolute;
     top: 140px;
-    left: 20px;
     color: #868686;
     font-size: 16px;
     font-family: 'Helvetica',Arial,sans-serif;
@@ -251,3 +273,57 @@ hr {
     border-style: solid;
     line-height: 20px;
 }
+
+.working-info {
+    position: absolute;
+    justify-content: center;
+    margin-top: 293px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 570.96px);
+    gap: 40px;
+}
+
+.working-item:nth-child(6) {
+    grid-column: 1 / 2;
+}
+
+.doing-info {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    width: 1070px;
+    left: 592px;
+}
+
+.working-item h3 {
+    transform-origin: center center;
+    line-height: 34px;
+    color: #000000;
+    font-size: 22px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.working-item p {
+    margin-top: 66px;
+}
+
+.working-item .txt {
+    margin-top: 18px;
+    transform-origin: center center;
+    line-height: 20px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    line-height: 1.1;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+

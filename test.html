@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <style>
+        .slideshow-container {
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+        .slideshow {
+            display: inline-block;
+        }
+
+        .slideshow img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="slideshow">
+            <img src="./images/slide-scroll/1.jpg" alt="Image 1">
+            <img src="./images/slide-scroll/4.jpg" alt="Image 2">
+            <img src="./images/slide-scroll/3.jpg" alt="Image 3">
+
+        </div>
+    </div>
+
+
+    <script>
+        window.addEventListener('load', () => {
+            const slideshowContainer = document.querySelector('.slideshow-container');
+            const slideshow = document.querySelector('.slideshow');
+
+            slideshow.addEventListener('load', () => {
+                const scrollPos = slideshowContainer.scrollLeft;
+                const slideWidth = slideshow.clientWidth;
+
+                if (scrollPos + slideWidth >= slideshow.scrollWidth) {
+                    slideshowContainer.scrollLeft = 0; // 처음으로 스크롤
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
