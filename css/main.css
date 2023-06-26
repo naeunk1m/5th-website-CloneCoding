@@ -13,7 +13,6 @@ header {
 
 #logo-area {
     position: relative;
-    left: 20px;
     top: 3px;
 }
 
@@ -47,7 +46,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* (선택사항) 텍스트 요소들을 수직으로 정렬하기 위해 추가 */
+    flex-direction: column; 
 }
 
 .intro-pg .text-area p {
@@ -182,4 +181,73 @@ hr {
     font-weight: 600;
     letter-spacing: 2px;
     border-style: solid;
+}
+
+.work-info {
+    position: absolute;
+    top: 220px;
+}
+
+.work-info .num {
+    transform-origin: center center;
+    line-height: 95px;
+    color: #000000;
+    font-size: 86px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    line-height: 1.1;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.work-info .num p {
+    transform-origin: center center;
+    line-height: 18px;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    line-height: 1.1;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.about-hr {
+    width: 1205.36px;
+    position: relative;
+    top: 220px;
+    margin-left: 668px;
+    height: 1.586px;
+    background-color: #b0b0b0;
+    border-style: solid;
+}
+
+.work-info-desc {
+    margin-top: 265px;
+    width: 1205.36px;
+    height: 200px;
+    margin-left: 668px;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 562.68px 562.68px;
+    gap: 40px;
+}
+
+.work-info-desc .txt:nth-child(3) {
+    grid-column: 2/4;
+}
+
+.work-info-desc .txt {
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Helvetica',Arial,sans-serif;
+    line-height: 1.1;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    line-height: 20px;
 }
