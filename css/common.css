@@ -9,7 +9,7 @@ body {
     margin-right: 20px;
 }
 
-#about, #working, #doing, #why, #contact {
+#about, #working, #doing, #why, #contact, #spread-scroll {
     position: relative;
 }
 
@@ -41,6 +41,12 @@ body {
 
 #contact {
     height: 1113px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
+#spread-scroll {
+    height: 958px !important;
     width: 100vw !important;
     max-width: 100%;
 }

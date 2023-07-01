@@ -8,20 +8,21 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <style>
         .image-container {
-            width: 300px;
-            height: 200px;
+
+            width: 100%;
+            height: 100vh;
             overflow: hidden;
-            position: relative;
         }
 
         .image-container img {
-            width: 100%;
+            width: 360px;
             height: auto;
-            transition: transform 0.5s;
+            transition: transform 0.3s ease;
         }
 
-        .image-container:hover img {
+        .scroll-effect {
             transform: scale(1.2);
+            /* 스크롤 시 이미지 크기 확대 */
         }
     </style>
 </head>
@@ -64,51 +65,26 @@
     RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
     RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
     RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
-    RKSKEKEKKEKEKKKKKKKKKKKKKKKKKKKKKKKKK<br />
     <div class="image-container">
         <img src="images/H9a23779b4d8d47f1866.jpg" alt="Image">
     </div>
 
+    <script>
+        window.addEventListener('scroll', function () {
+            var imageContainer = document.querySelector('.image-container');
+            var image = imageContainer.querySelector('img');
+
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            var imageOffsetTop = imageContainer.offsetTop;
+
+            if (scrollPosition >= imageOffsetTop) {
+                image.classList.add('scroll-effect');
+            } else {
+                image.classList.remove('scroll-effect');
+            }
+        });
+
+    </script>
 </body>
 
 </html>
