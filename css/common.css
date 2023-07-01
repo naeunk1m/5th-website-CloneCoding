@@ -1,6 +1,7 @@
 
 body {
     background-color: #fffdf8;
+    /* overflow-x: hidden; */
 }
 
 #wrap {
@@ -12,11 +13,36 @@ body {
     position: relative;
 }
 
-hr {
-    position: relative;
-    top: 40px;
-    width: 570px;
-    height: 1.409px;
-    background-color: #b0b0b0;
-    border-style: solid;
+/* section id */
+
+#about {
+    height: 972px !important;
+    width: 100vw !important;
+    max-width: 100%;
 }
+
+#working {
+    height: 1352px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
+#doing {
+    height: 1169px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
+#why {
+    height: 1310px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
+#contact {
+    height: 1113px !important;
+    width: 100vw !important;
+    max-width: 100%;
+}
+
+/* section id */
