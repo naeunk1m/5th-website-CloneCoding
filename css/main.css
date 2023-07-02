@@ -50,37 +50,39 @@ header {
     top: 108px;
 }
 
-.intro-pg .text-area {
+.text-area {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
 }
 
-.intro-pg .text-area p {
+.text-area p {
     color: #000000;
     font-size: 24px;
     line-height: 23px;
 }
 
-.intro-pg .text-area .ta_title{
+.text-area .ta_title{
     position: relative;
     color: #000000;
     font-size: 100px;
-    line-height: 1;
+    line-height: 1.1;
     letter-spacing: -3.5px;
     background-position: center center;
     border-color: transparent;
     border-style: solid;
 }
 
-.intro-pg .text-area h1 {
+.text-area .ta_title.t1 {
     margin-left: -300px;
 }
 
-.intro-pg .text-area h2 {
+.text-area .ta_title.t2{
     margin-right: -300px;
 }
+
+
 
 .contactbtn-area {
     position: absolute;
@@ -333,7 +335,7 @@ header {
 
 
 
-#spread-scroll > form {
+form {
     
     position: absolute;
     top: 231px;
@@ -377,6 +379,7 @@ header {
 .why-info {
     position: absolute;
     width: 100%;
+    top: 30%;
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -397,3 +400,8 @@ header {
 }
 
 /* why-info */
+
+
+#contact > form {
+    top: 462px;
+}
