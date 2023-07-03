@@ -9,7 +9,7 @@ body {
     margin-right: 20px;
 }
 
-#about, #working, #doing, #why, #contact, #spread-scroll {
+#about, #working, #doing, #why, #contact, #spread-scroll, #image-scroll  {
     position: relative;
 }
 
@@ -49,6 +49,11 @@ body {
     height: 958px !important;
     width: 100vw !important;
     max-width: 100%;
+}
+
+#image-scroll {
+    height: 1120px !important;
+    overflow-x: hidden;
 }
 
 /* section id */

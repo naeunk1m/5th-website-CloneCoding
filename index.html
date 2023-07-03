@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 
 <body>
@@ -110,7 +111,41 @@
 
             </section>
             <section id="image-scroll">
-
+                <div class="image-scroll-area">
+                    <div class="image-wrapper">
+                        <img src="./images/slide-scroll/1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image-scroll-area">
+                    <div class="image-wrapper">
+                        <img src="./images/slide-scroll/4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image-scroll-area">
+                    <div class="image-wrapper">
+                        <img src="./images/slide-scroll/3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image-scroll-area">
+                    <div class="image-wrapper">
+                        <img src="./images/slide-scroll/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image-scroll-area">
+                    <div class="image-wrapper">
+                        <img src="./images/slide-scroll/5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image-scroll-area">
+                    <div class="image-wrapper">
+                        <img src="./images/slide-scroll/6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image-scroll-area">
+                    <div class="image-wrapper">
+                        <img src="./images/slide-scroll/7.jpg" alt="">
+                    </div>
+                </div>
             </section>
             <section id="working">
                 <div class="text-area">
@@ -143,9 +178,10 @@
                         <h3>DECORATIVE LIGHT</h3>
                         <div class="txt">We provide training and help with your projects</div>
                     </div>
-                    <div class="scorll-img-area">
-                        <div class="working-item img">
+                    <div class="working-item">
+                        <div class="scorll-img-area">
                             <img src="" alt="">
+                            <div class="bg"></div>
                         </div>
                     </div>
                     <div class="working-item">
@@ -217,36 +253,41 @@
 
                 <div class="why-info">
                     <div class="why-item">
-                        <p>{01}</p>
                         <hr>
+                        <p>{01}</p>
                         <h3>EXTENDED PRODUCT WARRANTY</h3>
                     </div>
                     <div class="why-item">
-                        <p>{02}</p>
                         <hr>
+                        <p>{02}</p>
                         <h3>FAST DELIVERY THROUGHOUT RUSSIA</h3>
                     </div>
                     <div class="why-item">
+
                     </div>
                     <div class="why-item">
+                        <div class="scorll-img-area">
+                            <img src="" alt="">
+                            <div class="bg"></div>
+                        </div>
                         <!-- <img src="./images/a3964lm-8bk-1.jpeg" alt=""> -->
                     </div>
 
                     <div class="why-item">
-                        <p>{03}</p>
                         <hr>
+                        <p>{03}</p>
                         <h3>THE ABILITY TO VIEW THE PRODUCT IN OFFLINE STORES</h3>
                     </div>
                     <div class="why-item">
                     </div>
                     <div class="why-item">
-                        <p>{04}</p>
                         <hr>
+                        <p>{04}</p>
                         <h3>133 PICK-UP POINTS</h3>
                     </div>
                     <div class="why-item">
-                        <p>{05}</p>
                         <hr>
+                        <p>{05}</p>
                         <h3>EASY RETURN OF GOODS</h3>
                     </div>
                 </div>
@@ -259,6 +300,36 @@
                 </div>
                 <p>in the programs «Apartment question»,</p>
                 <p>«Dacha answer» and «Fazenda»</p>
+
+                <div class="motion-area">
+                    <div class="motion-img img1">
+                        <img src="./images/slide-scroll/fXGNe1ypEdVlfdyPH5dw.jpeg" alt="">
+                    </div>
+                    <div class="motion-img img2">
+                        <img src="./images/slide-scroll/YJE-ywZnHePoJDnjEQ8G.jpeg" alt="">
+                    </div>
+                    <div class="motion-img img3">
+                        <img src="./images/slide-scroll/gFyxxCqOKivHkmQFhtls.jpeg" alt="">
+                    </div>
+                    <div class="motion-img img4">
+                        <img src="./images/slide-scroll/fXGNe1ypEdVlfdyPH5dw (1).jpeg" alt="">
+                    </div>
+                    <div class="motion-img img5">
+                        <img src="./images/slide-scroll/-17ZGaBSb-R4Xc7piyCy.jpeg" alt="">
+                    </div>
+                    <div class="motion-img img6">
+                        <img src="./images/slide-scroll/KvcX11HdwozxfvXDesgm.jpeg" alt="">
+                    </div>
+                    <div class="motion-img img7">
+                        <img src="./images/slide-scroll/YbK2IgVvXWbOOlYHkNtm.jpeg" alt="">
+                    </div>
+                    <div class="motion-img img8">
+                        <img src="./images/slide-scroll/KWNc2Ew7NoBIwvLyuOgE.jpeg" alt="">
+                    </div>
+                    <div class="motion-img img9">
+                        <img src="./images/slide-scroll/.jpeg" alt="">
+                    </div>
+                </div>
             </section>
             <section id="contact">
                 <div class="text-area">
@@ -304,6 +375,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        const scrollContainer = document.querySelector("#image-scroll");
+
+        scrollContainer.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            scrollContainer.scrollLeft += event.deltaY;
+        });
+
+
+
+    </script>
 </body>
 
 </html>
