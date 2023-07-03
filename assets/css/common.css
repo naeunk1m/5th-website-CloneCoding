@@ -3,7 +3,7 @@ body {
     background-color: #fffdf8;
     /* overflow-x: hidden; */
 }
-
+/* 
 #wrap {
     margin-left: 20px;
     margin-right: 20px;
@@ -11,10 +11,10 @@ body {
 
 #about, #working, #doing, #why, #contact, #spread-scroll, #image-scroll  {
     position: relative;
-}
+} */
 
 /* section id */
-
+/* 
 #about {
     height: 972px !important;
     width: 100vw !important;
@@ -54,6 +54,6 @@ body {
 #image-scroll {
     height: 1120px !important;
     overflow-x: hidden;
-}
+} */
 
 /* section id */
