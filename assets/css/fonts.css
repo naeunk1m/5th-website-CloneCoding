@@ -1,3 +1,12 @@
+/* 
+ttf - [이걸로받음] [구형브라우저들을 지원]
+otf - [이걸로받음] [구형브라우저들을 지원]
+woff - [웹오픈폰트포맷] 모던브라우저
+woff2 - [웹오픈폰트포맷] 모던브라우저woff 최대 50% 압축된파일 [최신브라우저]
+
+eot - [익스] 안씀
+*/
+
 @font-face {
     font-family: 'helvetica';
     src: url(../font/helvetica_regular_1.woff) format('woff');
@@ -8,7 +17,6 @@
     src: url(../font/helvetica_bold_1.woff) format('woff');
     font-weight: 700;
 }
-
 
 @font-face {
     font-family: 'pretendard';

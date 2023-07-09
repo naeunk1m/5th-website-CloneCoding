@@ -3,19 +3,19 @@ body {
     background-color: #fffdf8;
     /* overflow-x: hidden; */
 }
-/* 
-#wrap {
+
+/* #wrap {
     margin-left: 20px;
     margin-right: 20px;
-}
+} */
 
-#about, #working, #doing, #why, #contact, #spread-scroll, #image-scroll  {
+/* #about, #working, #doing, #why, #contact, #spread-scroll, #image-scroll  {
     position: relative;
 } */
 
 /* section id */
-/* 
-#about {
+
+/* #about {
     height: 972px !important;
     width: 100vw !important;
     max-width: 100%;

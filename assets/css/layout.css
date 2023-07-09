@@ -7,47 +7,76 @@
 /* header */
 
 header {
-    
     padding: 0 20px;
 }
-
-header .inner {
-    position: relative;
+.header .inner{
     display: flex;
-    align-items: center;
+    position: relative;
     height: 100px;
+    align-items: center;
     justify-content: center;
-    
 }
-
-header .logo-area {
+.header .logo-area{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
 }
-header .location-area {
+.header .loaction-area{
     display: flex;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
 }
-
-header .location-area .btn-menu{
-    display: none;
+.header .loaction-area .btn-menu{
+    display: block;
 }
 
-.gnb {}
+
+.gnb{}
 .gnb .nav-list{
     display: flex;
     gap: 40px;
 }
-.gnb .nav-list li {
-
+.gnb .nav-list li{}
+.gnb .nav-list a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 5px;
+}
+.gnb .nav-list a span{display: flex;}
+.gnb .nav-list a span i{min-width:8px;
 }
 
-.gnb .nav-list li a{}
+.gnb .nav-list a span i:nth-child(1){transition: 0.7s cubic-bezier(0.76, 0, 0.24, 1);}
+.gnb .nav-list a span i:nth-child(2){transition: 0.7s 0.015s cubic-bezier(0.76, 0, 0.24, 1);}
+.gnb .nav-list a span i:nth-child(3){transition: 0.7s 0.03s cubic-bezier(0.76, 0, 0.24, 1);}
+.gnb .nav-list a span i:nth-child(4){transition: 0.7s 0.045s cubic-bezier(0.76, 0, 0.24, 1);}
+.gnb .nav-list a span i:nth-child(5){transition: 0.7s 0.060s cubic-bezier(0.76, 0, 0.24, 1);}
+.gnb .nav-list a span i:nth-child(6){transition: 0.7s 0.075s cubic-bezier(0.76, 0, 0.24, 1);}
+.gnb .nav-list a span i:nth-child(7){transition: 0.7s 0.09s cubic-bezier(0.76, 0, 0.24, 1);}
+.gnb .nav-list a span i:nth-child(8){transition: 0.7s 0.105s cubic-bezier(0.76, 0, 0.24, 1);}
+.gnb .nav-list .front{
+
+}
+.gnb .nav-list .back{
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    color: #f00;
+}
+.gnb .nav-list a:hover .front i{
+    transform: translateY(-100%);
+}
+.gnb .nav-list a:hover .back i{
+    transform: translateY(-100%);
+}
+
+
+
+
 
 footer {
     
@@ -87,4 +116,31 @@ footer h1 {
 .footer-bottom {
     display: flex;
     justify-content: space-between;
+}
+
+
+
+/*위에 있는소스는  1331PX 까지 잡혔어야함 */
+
+
+/* 미디어 쿼리  */
+/* 1330px ~ 1025px */
+@media (max-width:1330px) {
+    
+}
+/* 1024px ~ 768px */
+@media (max-width:1024px) {
+    .gnb{
+        display: none;
+    }
+    .header .loaction-area .btn-menu{
+        display: block;
+        width: 50px;
+        height: 15px;
+        background: #f00; 
+    }
+}
+/* 767px~320px */
+@media (max-width:767px) {
+    
 }
