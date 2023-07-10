@@ -64,6 +64,7 @@
     border-radius: 30px;
     background-color: #252424;
     text-decoration: none;
+    z-index: 15;
 }
 
 .button:hover {
@@ -159,7 +160,6 @@
 
 .image-scroll{
     position: relative;
-    background: #ccc;
     height: 500vh;
 }
 .image-scroll .sticky{
@@ -169,7 +169,6 @@
     overflow: hidden;
     top: 0;
     height: 100vh;
-    background: yellow;
 }
 .image-scroll .image-wrapper{
     display: flex;
@@ -222,10 +221,25 @@
     grid-column: 1 / 2;
 }
 
-.working-item .button {
-    position: absolute; 
-    bottom: 0; 
-    right: 0; 
+.sc-showcase1 {
+    height: 300vh;
+}
+
+.sc-showcase1 .skicky {
+    position: relative;
+    height: 400vh;
+}
+
+.sc-showcase1 .img-box {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sc-showcase1 .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .scorll-img-area {
@@ -257,6 +271,11 @@
 
 /* doing-info */
 
+.sc-doing {
+    position: relative;
+    background: #fff;
+}
+
 .sc-doing .doing-info {
     padding: 50px 0;
     display: grid;
@@ -281,27 +300,34 @@
 
 
 
-.doing-item .button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
 
 /* doing-info */
 
 
 /* form */
 
-.sc-spread-scroll > h3 {
-    width: 45%;
+.sc-spread-scroll {
+    background: #888;
+    position: relative;
     text-align: center;
-    color: #000;
-    font-size: 30px;
-    line-height: 1.1;
-    font-weight: 600;
+    padding: 150px 0;
 }
 
+.sc-spread-scroll .bg {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    top: 0;
+    background: #fff;
+}
 
+.sc-spread-scroll .bg.left {
+    left: 0;
+}
+
+.sc-spread-scroll .bg.right {
+    right: 0;
+}
 
 
 .form-control {
@@ -337,6 +363,11 @@
 
 /* why-info */
 
+.sc-why {
+    position: relative;
+    background: #fff;
+}
+
 .why-item {
     margin-bottom: 66px;
 }
@@ -369,6 +400,84 @@
 
 .sc-contact > form {
     top: 462px;
+}
+
+
+.sc-showcase2 {
+    position: relative;
+}
+
+.sc-showcase2 .title-area {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background: #ccc;
+}
+
+.sc-showcase2 .motion-area {
+    position: relative;
+}
+
+.sc-showcase2 .motion-img {
+    display: flex;
+    padding: 50px 0;
+}
+
+.sc-showcase2 .motion-img img {
+    width: 100%;
+}
+
+.sc-showcase2 .motion-img.img1 {}
+
+.sc-showcase2 .motion-img.img2 {
+    justify-content: flex-end;
+}
+
+.sc-showcase2 .motion-img.img3 {}
+
+.sc-showcase2 .motion-img.img4 {}
+
+.sc-showcase2 .motion-img.img5 {}
+
+.sc-showcase2 .motion-img.img6 {}
+
+.sc-showcase2 .motion-img.img7 {}
+
+.sc-showcase2 .motion-img.img8 {
+    justify-content: center;
+}
+
+.sc-showcase2 .motion-img.img2 img {
+    width: 30vw;
+}
+
+.sc-showcase2 .motion-img.img1 img {
+    width: 45vw;
+}
+
+.sc-showcase2 .motion-img.img3 img {
+    width: 30vw;
+}
+
+.sc-showcase2 .motion-img.img4 img {
+    width: 45vw;
+}
+
+.sc-showcase2 .motion-img.img5 img {
+    width: 25vw;
+}
+
+.sc-showcase2 .motion-img.img6 img {
+    width: 45vw;
+}
+
+.sc-showcase2 .motion-img.img7 img {
+    width: 25vw;
+}
+
+.sc-showcase2 .motion-img.img8 img {
+    width: 45vw;
+    object-fit: cover;
 }
 
 
