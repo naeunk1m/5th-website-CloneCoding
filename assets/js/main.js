@@ -4,7 +4,7 @@ $(function(){
 
     gsap.to('.image-wrapper',{
         scrollTrigger:{
-            trigger:"#image-scroll",
+            trigger:".image-scroll",
             start:"0% 0%",
             end:"100% 100%",
             // markers:true,
@@ -30,9 +30,9 @@ $(function(){
         })
     })
         
-    gsap.to('#spread-scroll .bg',{
+    gsap.to('.sc-spread-scroll .bg',{
         scrollTrigger:{
-            trigger:'#spread-scroll',
+            trigger:'.sc-spread-scroll',
             start:"50% 100%",
             end:"100% 50%",
             markers:true,

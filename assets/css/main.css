@@ -2,24 +2,24 @@
 
 /* group-introtxt */
 
-.group-introtxt {
+.group-title {
     padding: 50px 0;
 }
 
-.text-area {
+.title-area {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
 }
 
-.text-area p {
+.title-area p {
     color: #000000;
     font-size: 24px;
     line-height: 1.3;
 }
 
-.text-area .ta_title{
+.title-area .ta_title{
     position: relative;
     color: #000000;
     font-size: 100px;
@@ -31,11 +31,11 @@
     font-weight: 400;
 }
 
-.text-area .ta_title.t1 {
+.title-area .ta_title.t1 {
     margin-left: -300px;
 }
 
-.text-area .ta_title.t2{
+.title-area .ta_title.t2{
     margin-right: -300px;
 }
 
@@ -127,6 +127,8 @@
     font-size: 86px;
 }
 
+
+
 .sc-about .work-info-desc{
     border-top: 1px solid #b0b0b0;
     display: grid;
@@ -145,12 +147,12 @@
 
 
 
-#image-scroll{
+.image-scroll{
     position: relative;
     background: #ccc;
     height: 500vh;
 }
-#image-scroll .sticky{
+.image-scroll .sticky{
     display: flex;
     align-items: center;
     position: sticky;
@@ -159,11 +161,11 @@
     height: 100vh;
     background: yellow;
 }
-#image-scroll .image-wrapper{
+.image-scroll .image-wrapper{
     display: flex;
     gap: 30px;
 }
-#image-scroll .image-wrapper .img-box{
+.image-scroll .image-wrapper .img-box{
     width: 30vw;
 }
 
@@ -289,7 +291,7 @@
 /* form */
 
 
-#spread-scroll > h3 {
+.sc-spread-scroll > h3 {
     /* color: #ffffff; */
     width: 45%;
     text-align: center;
