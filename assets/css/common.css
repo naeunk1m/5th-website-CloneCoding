@@ -3,3 +3,14 @@ body {
     background-color: #fffdf8;
     /* overflow-x: hidden; */
 }
+
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
