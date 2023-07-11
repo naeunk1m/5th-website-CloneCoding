@@ -204,6 +204,7 @@
 .working-item .num {
     border-bottom: 2px solid #b0b0b0;
     padding: 10px 0;
+    font-size: 14px;
 }
 .working-item .desc {
     padding: 20px 0 10px 0;
@@ -219,6 +220,11 @@
 
 .working-item:nth-child(6) {
     grid-column: 1 / 2;
+}
+.working-item:nth-child(8) {
+    justify-items: end;
+    align-items: end;
+    display: inline-grid;
 }
 
 .sc-showcase1 {
@@ -269,7 +275,7 @@
 
 
 
-/* doing-info */
+/* x-info */
 
 .sc-doing {
     position: relative;
@@ -295,7 +301,7 @@
 
 .doing-item .num {
     border-top: 2px solid #b0b0b0;
-
+    font-size: 14px;
 }
 
 
@@ -329,11 +335,13 @@
     right: 0;
 }
 
+form {
+    
+}
 
-.form-control {
+.sc-spread-scroll form fieldset .form-table .form-control {
     position: relative;
     border: none;
-    height: 50px;
     font-weight: 400;
     font-size: 20px;
     color: #fff;
