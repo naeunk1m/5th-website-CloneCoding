@@ -160,7 +160,7 @@
 
 .image-scroll{
     position: relative;
-    height: 500vh;
+    height: 100vh;
 }
 .image-scroll .sticky{
     display: flex;
@@ -169,6 +169,7 @@
     overflow: hidden;
     top: 0;
     height: 100vh;
+
 }
 .image-scroll .image-wrapper{
     display: flex;
@@ -179,6 +180,7 @@
     width: 30vw;
     flex-shrink: 0;
 }
+
 
 
 
@@ -280,17 +282,30 @@
 .sc-doing {
     position: relative;
     background: #fff;
+    
+}
+
+.sc-doing .doing-area {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .sc-doing .doing-info {
-    padding: 50px 0;
+    /* padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,auto);
     justify-content: center;
     width: 35%;
     justify-content: flex-end;
+    gap: 30px; */
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 30px;
+    width: 35%;
+    margin-left: calc(100% - 35%);
 }
 
 .doing-item p { 
