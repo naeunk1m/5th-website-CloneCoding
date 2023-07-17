@@ -18,7 +18,7 @@ $(function(){
     })
 
     $('.scorll-img-area .bg').each(function(index,element){
-         gsap.to($(this).find('img'),{
+        gsap.to($(this).find('img'),{
             scrollTrigger:{
                 trigger:element,
                 start:"0% 100%",
