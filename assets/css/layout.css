@@ -79,7 +79,7 @@ header {
 
 
 footer {
-    
+    color: #fff;
     height: 464px !important;
     width: 100vw !important;
     max-width: 100%;
@@ -89,37 +89,63 @@ footer {
     left: 0;
 }
 
+
 .footer-area {
     margin-left: 20px;
     margin-right: 20px;
+    padding-top: 132px;
+    position: relative;
 }
 
 footer h1 {
-    position: absolute;
     color: #fff;
-    top: 132px;
+    border-bottom: 1px solid #fff;
 }
 
-.footer-area > hr {
-    position: absolute;
-    width: 98%;
-    top: 194px;
-    background-color: #fff;
-    height: 1.409px;
-    z-index: 5;
-}
+
 .footer-top {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-top .top-left {
-    flex: 1;
-    }
+.footer-top h2 {
+    font-size: 15px;
+}
+
+.footer-top > * {
+    padding: 50px 0;
+}
+
+.footer-top .sns-icons {
+    display: flex;
+}
+
+.top-right {
+    text-align: right;
+}
+
+.footer-top .sns-icons svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
 
 .footer-bottom {
     display: flex;
     justify-content: space-between;
+    bottom: 0;
+}
+
+.bottom-right {
+    text-align: right;
+}
+
+address {
+    font-style: normal;
+}
+
+.bottom-right h2 {
+    font-size: 15px;
 }
 
 
