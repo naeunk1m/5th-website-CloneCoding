@@ -58,6 +58,7 @@ header {
 .gnb .nav-list a span i:nth-child(6){transition: 0.7s 0.075s cubic-bezier(0.76, 0, 0.24, 1);}
 .gnb .nav-list a span i:nth-child(7){transition: 0.7s 0.09s cubic-bezier(0.76, 0, 0.24, 1);}
 .gnb .nav-list a span i:nth-child(8){transition: 0.7s 0.105s cubic-bezier(0.76, 0, 0.24, 1);}
+.gnb .nav-list a span i:nth-child(9){transition: 0.7s 0.105s cubic-bezier(0.76, 0, 0.24, 1);}
 .gnb .nav-list .front{
 
 }

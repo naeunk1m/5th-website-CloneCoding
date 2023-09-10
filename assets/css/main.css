@@ -160,7 +160,8 @@
 
 .image-scroll{
     position: relative;
-    height: 100vh;
+    height: 500vh;
+    background: #ccc;
 }
 .image-scroll .sticky{
     display: flex;
@@ -169,6 +170,7 @@
     overflow: hidden;
     top: 0;
     height: 100vh;
+    background: yellow;
 
 }
 .image-scroll .image-wrapper{
@@ -178,7 +180,6 @@
 
 .image-scroll .image-wrapper .img-box{
     width: 30vw;
-    flex-shrink: 0;
 }
 
 
@@ -233,7 +234,7 @@
     height: 300vh;
 }
 
-.sc-showcase1 .skicky {
+.sc-showcase1 .sticky {
     position: relative;
     height: 400vh;
 }
@@ -249,6 +250,13 @@
     height: 100%;
     object-fit: cover;
 }
+/* 
+
+
+
+
+
+ */
 
 .scorll-img-area {
     width: 100%;
@@ -511,17 +519,24 @@ input:focus::placeholder {
 
 .sc-showcase2 .motion-img.img2 {
     justify-content: flex-end;
+    z-index: -99;
 }
 
 .sc-showcase2 .motion-img.img3 {}
 
-.sc-showcase2 .motion-img.img4 {}
+.sc-showcase2 .motion-img.img4 {
+    justify-content: flex-end;
+}
 
 .sc-showcase2 .motion-img.img5 {}
 
-.sc-showcase2 .motion-img.img6 {}
+.sc-showcase2 .motion-img.img6 {
+    justify-content: center;
+}
 
-.sc-showcase2 .motion-img.img7 {}
+.sc-showcase2 .motion-img.img7 {
+    justify-content: flex-end;
+}
 
 .sc-showcase2 .motion-img.img8 {
     justify-content: center;
